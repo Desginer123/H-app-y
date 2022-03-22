@@ -1,0 +1,39 @@
+.promo {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.promo__text-wrapper {
+  margin-right: 216px;
+}
+.promo-title {
+  font-weight: 400;
+font-size: 54px;
+line-height: 59px;
+/* or 110% */
+margin: 0;
+    margin-top: 11px;
+    margin-bottom: 18px;
+
+color: $black-color;
+}
+.promo-text {
+  font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+margin: 0;
+margin-bottom: 20px;
+color: $black-color;
+}
+.btn-wrapper {
+  display: flex;
+}
+.promo-btn:first-child {
+  margin-right: 10px;
+}
+
+.promo-wrapper {
+  display: flex;
+  align-items: center;
+}

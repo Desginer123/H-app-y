@@ -3,7 +3,40 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
-
+.black-btn {
+  @include black-btn
+}
+.blue-btn {
+  background-color: $blue-color
+}
+.red-btn {
+  background-color: $red-color;
+}
+.yellow-btn {
+  background-color: $yellow-color;
+}
+.section-title {
+  @include title-text;
+}
+.subtitle-text {
+  @include subtitle-text
+}
+.third-text {
+  @include third-text
+}
+.feature-title {
+  @include feature-title
+}
+.feature-title {
+  @include feature-text
+}
+.number {
+  font-weight: 400;
+font-size: 96px;
+line-height: 96px;
+/* identical to box height, or 100% */
+color: $light-color;
+}
 // подключения компонентов страницы
 @import "./components/header";
-
+@import './components/promo';

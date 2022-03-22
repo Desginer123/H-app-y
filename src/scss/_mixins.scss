@@ -1,1 +1,71 @@
+@mixin black-btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $light-color;
+  padding: 10px 25px 12px 25px;
+  border-radius: 4px;
+  background-color: $black-color;
+}
+@mixin title-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $black-color;
+}
+@mixin subtitle-text {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  color: $black-color;
+}
+@mixin third-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+  color: $textgrey-color;
+}
+@mixin mainText($type, $color) {
+  font-weight: 400;
+  @if ($type == "title") {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color;
+  } @else if($type == "subtitle") {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    color: $olor;
+  } @else if($type == "third") {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color;
+  }
+}
+@mixin feature-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height, or 125% */
 
+  text-align: center;
+}
+@mixin feature-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  /* or 149% */
+
+  text-align: center;
+  color: $black-color;
+}
